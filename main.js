@@ -35,10 +35,13 @@ function addTask(arrayOfTasks) {
     btn_del = document.createElement("button");
     btn_del.setAttribute("type", "button");
     btn_del.className = "button-del";
-    btn_del.textContent = "Delete";
-    btn_del.style.cssText =
-      "background-color: red; color: white; outline: 2px solid; border: none; cursor: pointer;";
-    btn_del.onclick = (e) => {
+      btn_del.textContent = "Delete";
+      if (element.completed) btn_del.style.cssText =
+        "background-color: rgb(42, 172, 42); color: white; outline: 2px solid; border: none; cursor: pointer;";
+      else btn_del.style.cssText =
+        "background-color: red; color: white; outline: 2px solid; border: none; cursor: pointer;";
+
+      btn_del.onclick = (e) => {
       const parent_id = e.target.parentNode.parentNode;
       console.log(parent_id);
       taskOfArray.forEach((api) => {
