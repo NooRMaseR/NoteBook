@@ -1,0 +1,48 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+#newTask-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20%;
+    background-color: rgb(223, 81, 81);
+    border-radius: 10px;
+}
+
+#Task {
+    padding: 5px;
+    border: 2px none;
+    border-radius: 42px;
+    margin: 10px;
+    outline: none;
+}
+
+#button-add {
+    width: 100px;
+    border-radius: 50px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+#button-add:hover {
+    background-color: rgb(42, 172, 42);
+    color: white;
+}
+
+.div-task {
+    background-color: red;
+}
+
+.tasks-holder {
+    gap: 10px;
+}
+
+.complete {
+    background-color: rgb(42, 172, 42);
+}
